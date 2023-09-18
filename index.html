@@ -5,58 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Fun Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            background-color: #3498db;
+        /* ... (previous styles) ... */
+        
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: #fff;
             padding: 20px;
-            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 400px;
         }
 
-        h1 {
-            font-size: 36px;
+        .form-group {
+            margin-bottom: 20px;
         }
 
-        p {
+        .form-group label {
+            display: block;
             font-size: 18px;
-            line-height: 1.5;
         }
 
-        .fun-button {
-            background-color: #e74c3c;
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #3498db;
             color: white;
             padding: 10px 20px;
-            font-size: 20px;
+            font-size: 18px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        .fun-button:hover {
-            background-color: #c0392b;
+        .submit-button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Fun Website!</h1>
-    </header>
-    <main>
-        <h2>About Me</h2>
-        <p>Hello there! I'm your friendly website content. I love making websites fun and interactive.</p>
-        
-        <h2>Have Some Fun</h2>
-        <p>Click the button below to have some fun!</p>
-        <button class="fun-button" onclick="haveSomeFun()">Click Me!</button>
-    </main>
+    <!-- ... (previous content) ... -->
     
-    <script>
-        function haveSomeFun() {
-            alert("Yay! You're having fun on my website!");
-        }
-    </script>
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
