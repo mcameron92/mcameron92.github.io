@@ -1,7 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fun Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .fun-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .fun-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. Please see supporting docs.</p>
+    <header>
+        <h1>Welcome to My Fun Website!</h1>
+    </header>
+    <main>
+        <h2>About Me</h2>
+        <p>Hello there! I'm your friendly website content. I love making websites fun and interactive.</p>
+        
+        <h2>Have Some Fun</h2>
+        <p>Click the button below to have some fun!</p>
+        <button class="fun-button" onclick="haveSomeFun()">Click Me!</button>
+    </main>
+    
+    <script>
+        function haveSomeFun() {
+            alert("Yay! You're having fun on my website!");
+        }
+    </script>
 </body>
 </html>
